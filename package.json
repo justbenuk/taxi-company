@@ -1,0 +1,20 @@
+{
+  "name": "taxi-company",
+  "version": "0.0.1",
+  "description": "Taxi compnay website with staff dashboard",
+  "main": "server.js",
+  "scripts": {
+    "client": "npm start",
+    "server": "node server/server:website"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justbenuk/taxi-company.git"
+  },
+  "author": "Ben Andrews",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justbenuk/taxi-company/issues"
+  },
+  "homepage": "https://github.com/justbenuk/taxi-company#readme"
+}
