@@ -24,6 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 routes
 */
 app.use("/api/users", require("./routes/userRoutes"));
+app.use("/api/holidays", require("./routes/holidayRoutes"));
 
 app.get("/", (_, res) => {
   res.status(200).json({ message: "Welcome to Taxi Company API" });

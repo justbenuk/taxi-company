@@ -15,14 +15,19 @@ const userSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    roles: {
-      type: [
-        {
-          type: String,
-          enum: ["Not Authenticated", "Staff", "Manager"],
-        },
-      ],
-      default: ["Not Authenticated"],
+    role: {
+      type: String,
+      required: true,
+      enum: ["Not Authenticated", "Staff", "Management"],
+      default: "Not Authenticated",
+    },
+    totalDays: {
+      type: Number,
+      default: 0,
+    },
+    totalUsed: {
+      type: Number,
+      default: 0,
     },
   },
   {
